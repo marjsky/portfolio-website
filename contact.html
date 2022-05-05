@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Portfolio Website</title>
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="css/node_modules/normalize.css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<script src="js/tota11y.min.js"></script>
+<body>
+
+    <header class="page-header">
+        <!-- Add your logo here -->
+         <img src="img/MD_logo.svg" alt="lego" class="page-header__item">
+         
+         <nav class="main-navigation page-header__item">
+             <ul role="menubar" class="navigation-list">
+                 
+                 <li role="presentation">
+                     <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
+                 </li>
+                 <li role="presentation">
+                     <a href="about.html" aria-label="about me" class="navigation-list_item">About</a>
+                 </li>
+                 <li role="presentation">
+                     <a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
+                 </li>
+                 <li role="presentation">
+                     <a href="contact.html" role="menuitem" class="navigation-list navigation-list_item--active">Contact</a>
+                 </li>
+             </ul>
+         </nav>
+     </header>
+ 
+
+    <main>
+        <h1>Contact</h1>
+
+        <form action="/login-form-action" method="post">
+
+            <label for="contract-email">Email: </label>
+            <input type="email" id="contract-email" required>
+            <br>
+            <br>
+            <label for="telephone">Telephone: </label>
+            <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+            <br>
+            <br>
+            <label for="address">Address: </label>
+            <input type="text" id="address" name="user_address">
+            <br>
+            <br>
+            <label for="zip-code">Zip code</label>
+            <input type="text" id="zip-code" name="user_zipCode">    
+            <br>
+            <br>
+            <label for="state">State</label>
+            <input type="text" id="state" name="user_state">
+            <br>
+            <br>
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city">
+            <br>
+            <br>
+            <label for="message">Message: </label>
+            <textarea maxlength="250" id="message" required></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Send Message">
+        </form>
+
+
+        <section>
+            <a href="mailto:marcusjdaniels@gmail.com">marcusjdaniels@gmail.com</a><br>
+            <a href="tel:+14107823259">Calle me at +1 (410) 782-3259</a><br>
+            <a href="mailto:office@careerfoundry.com">Contact me</a>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <img src="img/github.svg" alt="Github">
+            <img src="img/twitter.svg" alt="Twitter">
+            <img src="img/linkedin.svg" alt="LinkedIn"> 
+        </div>
+    </footer>
+
+</body>
+</html>
