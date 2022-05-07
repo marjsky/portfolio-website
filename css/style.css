@@ -156,7 +156,7 @@ a.navigation-list_item {
 
 .grid {
     display: grid;
-    grid-template-columns: var(four-columns);
+    grid-template: var(four-columns);
     grid-gap: 20px;
 }
 
@@ -183,7 +183,7 @@ a.navigation-list_item {
     .grid{
         display: grid;
         /* grid-template-columns: 300px 300px 300px 300px; fractions are better than pixels - they are responsive */
-        grid-template-columns: var(four-columns);
+        grid-template: var(four-columns);
         grid-gap: 20px;
         margin: 0;
     }
