@@ -170,6 +170,7 @@ a.navigation-list_item {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 4;
+    margin-bottom: 20px;
 }
 
 /* start grid fallback */
@@ -196,7 +197,7 @@ a.navigation-list_item {
     .grid__item:last-child {
         grid-column: 4 / 4;
         grid-row: 1 / 4;
-        
+        margin-bottom: 20px;
     }
 }   
 
