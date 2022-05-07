@@ -197,6 +197,7 @@ a.navigation-list_item {
         grid-row-start: 1;
     -ms-grid-row-span: 3;
     grid-row-end: 4;
+    margin-bottom: 20px;
 }
 
 /* start grid fallback */
@@ -228,7 +229,7 @@ a.navigation-list_item {
         -ms-grid-row: 1;
         -ms-grid-row-span: 3;
         grid-row: 1 / 4;
-        
+        margin-bottom: 20px;
     }
 }   
 
