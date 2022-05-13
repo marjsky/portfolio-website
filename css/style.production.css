@@ -175,6 +175,10 @@ a.navigation-list_item {
     margin-left: 15px;
 }
 
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 .grid {
     display: -ms-grid;
     display: grid;
