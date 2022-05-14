@@ -174,7 +174,9 @@ a.navigation-list_item {
     display: inline-block;
     margin-left: 15px;
 }
-
+.page-main-contact {
+    text-align: center;
+}
 section {
     max-width: 1000px;
     margin: 0 auto;
