@@ -132,7 +132,12 @@ button:focus,
     background-image: url(../img/cover-image2.png);
     background-size: cover;
 }
-
+.page-main {
+    text-align: center;
+}
+.page-main_table {
+    margin: 0 auto;
+}
 .page-header__item {
     flex: 0 1 200px;
 }
