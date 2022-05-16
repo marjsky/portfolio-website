@@ -94,6 +94,7 @@ button:focus,
 }
 
 .button.download_button {
+    margin: 2em;
     color: var(--white);
 }
 
