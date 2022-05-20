@@ -273,6 +273,13 @@ section {
     margin: 0 auto;
 }
 
+input[type=email],
+input[type=tel],
+input[type=text] {
+    border-radius: 8px;
+    padding: 5px;
+}
+
 @-webkit-keyframes color-change {
     0% {
         fill: var(--sun-color-start);
