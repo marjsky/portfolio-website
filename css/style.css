@@ -162,8 +162,14 @@ a.navigation-list_item {
 .page-main-contact {
     text-align: center;
 }
+
+.title-work {
+  text-align: center;
+}
+
 section {
-    max-width: 1000px;
+    max-width: max-content;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .grid {
@@ -173,6 +179,8 @@ section {
 }
 
 .grid__item {
+    height: 600px;
+    min-width: 250px;
     background-color: var(--grid-gray);
     padding: 10px;
 }
@@ -221,14 +229,14 @@ section {
         font-size: 18px;
     }
 }
-@media all and (min-width: 500px) and (max-width: 750px) {
+/* @media all and (min-width: 500px) and (max-width: 750px) {
     .grid {
         grid-template-columns: 1fr 1fr;
     }
     h1 {
         font-size: 22px;
     }
-}
+} */
 @media all and (max-width: 750px) {
     .grid__item:last-child {
         grid-column: auto / auto;
