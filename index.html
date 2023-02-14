@@ -1,83 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marcus Portfolio Website</title>
-  <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
-  <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcus Portfolio Website</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- <link rel="stylesheet" href="./css/style_index.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/style.index.production.css"
+    />
+  </head>
 
-<body>
-    <!-- Heading logo and navigation -->
-    <header class="page-header">
-      <!-- Add your logo here -->
+  <body>
+    <!-- Navigation bar -->
+    <header class="header">
+      <!-- Logo -->
       <div class="logo">
-        <img src="img/Mjd-circle-logo.svg" alt="lego" class="page-header__item" >
+        <img
+          src="img/Mjd-circle-logo.svg"
+          alt="logo"
+          class="page-header__item"
+        />
       </div>
-      
-      <!-- <input id="menu-toggle" type="checkbox" />
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      < -->
-      <nav class="main-navigation page-header__item">
-          <ul role="menubar" class="navigation-list">
 
-              <li role="presentation">
-                  <a href="index.html" role="menuitem" class="navigation-list navigation-list_item--active">Home</a>
-              </li>
-              <li role="presentation">
-                  <a href="about.html" aria-label="about me" class="navigation-list_item">About</a>
-              </li>
-              <li role="presentation">
-                  <a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
-              </li>
-              <li role="presentation">
-                  <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-              </li>
+      <!-- Hamburger icon -->
+      <input type="checkbox" class="side-menu" id="side-menu" />
+      <label for="side-menu" class="hamb"
+        ><span class="hamb-line"></span
+      ></label>
 
-          </ul>
+      <!-- Menu -->
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
+    <!-- Main content -->
     <main class="profile">
-        <div class="container-profile">
-          <div class="profile-portrait">
-            <img src="img/MD-profile-pic-office.png" class="profile__portrait" alt="Marcus Daniels Portrait">
-          </div>
-          <div class="container-profile-content">
-            <h1>Hello, I'm Marcus</h1>
-            <p>
-              As a Full Stack <span>Web</span> Developer with sound management and creative competencies, I can provide a wide range of solutions.
-            </p>
-          </div>
-
+      <div class="container-profile">
+        <div class="profile-portrait">
+          <img
+            src="img/MD-profile-pic-office.png"
+            class="profile__portrait"
+            alt="Marcus Daniels Portrait"
+          />
         </div>
+        <div class="container-profile-content">
+          <h1>Hello, I'm Marcus</h1>
+          <p>
+            As a Full Stack <span>Web</span> Developer with sound management and
+            creative competencies, I can provide a wide range of solutions.
+          </p>
+        </div>
+      </div>
     </main>
 
+    <!-- Footer -->
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
         <!-- Added attribute link, target new tab, and secured against malicious -->
-        <a href="https://github.com/marjsky" target="_blank" rel="noopener noreferrer">
-          <img src="img/github.svg" alt="Github">
+        <a
+          href="https://github.com/marjsky"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="img/github.svg" alt="Github" />
         </a>
-        <a href="https://twitter.com/marcusjdaniels" target="_blank" rel="noopener noreferrer">
-          <img src="img/twitter.svg" alt="Twitter">
+        <a
+          href="https://twitter.com/marcusjdaniels"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="img/twitter.svg" alt="Twitter" />
         </a>
-        <a href="https://dev.to/marjsky" target="_blank" rel="noopener noreferrer">
-          <img src="img/dev-community-icon.svg" alt="Dev Commmunity">
+        <a
+          href="https://dev.to/marjsky"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="img/dev-community-icon.svg" alt="Dev Commmunity" />
         </a>
-        <a href="https://www.linkedin.com/in/marcus-daniels-5a721925a/" target="_blank" rel="noopener noreferrer">
-          <img src="img/linkedin.svg" alt="LinkedIn"> 
-        </a>      </div>
+        <a
+          href="https://www.linkedin.com/in/marcus-daniels-5a721925a/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="img/linkedin.svg" alt="LinkedIn" />
+        </a>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

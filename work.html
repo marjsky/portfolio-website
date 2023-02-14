@@ -1,177 +1,304 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marcus Portfolio Website</title>
-  <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
-  <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Portfolio Website</title>
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- <link rel="stylesheet" href="./css/style_work.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+    <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.work.production.css">
+  </head>
 
-<body>
-
-    <header class="page-header">
-      <!-- Add your logo here -->
+  <body>
+    <!-- Navigation bar -->
+    <header class="header">
+      <!-- Logo -->
       <div class="logo">
-        <img src="img/Mjd-circle-logo.svg" alt="lego" class="page-header__item" >
-      </div>          
-      <nav class="main-navigation page-header__item">
-          <ul role="menubar" class="navigation-list">
-              
-              <li role="presentation">
-                  <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
-              </li>
-              <li role="presentation">
-                  <a href="about.html" aria-label="about me" class="navigation-list_item">About</a>
-              </li>
-              <li role="presentation">
-                  <a href="work.html" role="menuitem" class="navigation-list navigation-list_item--active">Work</a>
-              </li>
-              <li role="presentation">
-                  <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-              </li>
-          </ul>
+        <img
+          src="img/Mjd-circle-logo.svg"
+          alt="logo"
+          class="page-header__item"
+        />
+      </div>
+
+      <!-- Hamburger icon -->
+      <input type="checkbox" class="side-menu" id="side-menu" />
+      <label for="side-menu" class="hamb"
+        ><span class="hamb-line"></span
+      ></label>
+
+      <!-- Menu -->
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <!-- Main content -->
     <section class="container-work">
-        <h1 class="title-work">Work</h1>
-        <div class="grid">
-            <!-- Grid items will live here -->
-            <div class="grid__item">
-                <img src="./img/Screenshot_meet.png" alt="meet app screenshot" width="100%" height="35%">
-                <h2 class="projects">Meet App</h2>
-                <p>Serverless progressive web application (PWA) built with React using test-driven development (TDD) tecnique and behavior-driven development. The application uses the Google Calendar API to retrieve data about upcoming events. </p>
-                <p class="technologies">Technologies:</p>
-                <ul class="project_technologies">
-                  <li>AWS</li>
-                  <li>Axios</li>
-                  <li>Jest</li>
-                  <li>React</li>
-                  <li>Recharts</li>
-                  <li>Jest-Cucumber</li>
-                  <li>O-Auth</li>
-                </ul>
-                <div class="project_links">
-                  <a href="https://github.com/marjsky/meet" target="_blank" class="button work_link">See Github</a>
-                  <a href="https://marjsky.github.io/meet/" target="_blank" class="button work_link">Visit Site</a>
-                  <!-- <a href="#" target="_blank" class="button work_link">Case Study</a> -->
-                </div>
-            </div>
-
-            <div class="grid__item">
-              <img src="./img/Pokedex.png" alt="simple list screenshot" width="100%" height="35%">
-                <h2 class="projects">Pokedex</h2>
-                <p>In the Pokedex App, a list of Pokémon is displayed on the web. Upon clicking a Pokémon's name, a modal window will open showing a description of that Pokémon.</p>
-                <p class="technologies">Technologies:</p>
-                <ul class="project_technologies">
-                  <li>JavaScript</li>
-                  <li>HTML5</li>
-                  <li>Bootstrap</li>
-                  <li>CSS3</li>
-                </ul>
-                <div class="project_links">
-                  <a href="https://github.com/marjsky/simple-js-app" target="_blank" class="button work_link">See Github</a>
-                  <a href="https://marjsky.github.io/simple-js-app/" target="_blank" class="button work_link">Visit Site</a>
-                  <!-- <a href="#" target="_blank" class="button work_link">Case Study</a> -->
-                </div>
-            </div>
-
-            <div class="grid__item">
-                <img src="./img/API_DB_myflix.png" alt="simple list screenshot" width="100%" height="35%">
-                <h2 class="projects">MyFlix API</h2>
-                <p>This is the server-side component of the myFlix Client. Users can find information about different movies, directors, and genres through the web application. Using the site, users can create a movie list, update their personal information, and sign up.</p>
-                <p class="technologies">Technologies:</p>
-                <ul class="project_technologies">
-                  <li>MongoDB</li>
-                  <li>MongoDB</li>
-                  <li>Express</li>
-                  <li>Node JS</li>
-                  <li>JavaScript</li>
-                  <li>Postman</li>
-                  <li>Passport</li>
-                  <li>Heroku</li>
-                </ul>
-                <div class="project_links">
-                  <a href="https://github.com/marjsky/movie-api" target="_blank" class="button work_link">See Github</a>
-                  <a href="https://mj23flixdb.herokuapp.com/documentation/" target="_blank" class="button work_link">Visit Site</a>
-                  <!-- <a href="#" target="_blank" class="button work_link">Case Study</a> -->
-                </div>
-            </div>
-
-            <div class="grid__item">
-                <img src="./img/react_app.png" alt="simple list screenshot" width="100%" height="35%">
-                <h2 class="projects">React App (myFlix)</h2>
-                <p>MyFlix client code, built with JavaScript/React, uses existing server-side code (REST API and database). In the app, the user can view information about selected movies, as well as their directors and genres, after creating an account. In addition to managing her account data, the user can add and remove favorite movies.</p>
-                <p class="technologies">Technologies:</p>
-                <ul class="project_technologies">
-                  <li>React</li>
-                  <li>React-Redux</li>
-                  <li>React-Router-Dom</li>
-                  <li>Parcel</li>
-                  <li>Node JS</li>
-                  <li>Express</li>
-                  <li>MongoDB</li>
-                </ul>
-                <div class="project_links">
-                  <a href="https://github.com/marjsky/myFlix-client" target="_blank" class="button work_link">See Github</a>
-                  <a href="https://marjsky-myflix.netlify.app/" target="_blank" class="button work_link">Visit Site</a>
-                  <a href="document/Case_Study_react_app.pdf" target="_blank" class="button work_link">Case Study</a>
-                </div>
-            </div>
-
-            <div class="grid__item">
-                <img src="./img/home_chat_app.PNG" class="img-chat-app" width="50%" height="45%">
-                <!-- <img src="./img/home_chat_app.PNG" class="img-chat-app" alt="simple list screenshot" width="50%" height="35%"> -->
-                <h2 class="projects">React Native Chat App</h2>
-                <p>Using React Native, this chat application allows users to chat on mobile devices (both iOS and Android). Besides providing a chat interface, the app also provides location and picture sharing options. There are two ways of storing data: online and offline.</p>
-                <p class="technologies">Technologies:</p>
-                <ul class="project_technologies">
-                  <li>Gifted chat</li>
-                  <li>Expo</li>
-                  <li>React</li>
-                  <li>Google Firebase</li>
-                  <li>IOS simulator</li>
-                  <li>Android simulator</li>
-                </ul>
-                <div class="project_links">
-                  <a href="https://github.com/marjsky/chat-app" target="_blank" class="button work_link">See Github</a>
-                  <!-- <a href="#" target="_blank" class="button work_link">Visit Site</a> -->
-                  <!-- <a href="#" target="_blank" class="button work_link">Case Study</a> -->
-                </div>
-            </div>
-
-            <div class="grid__item">
-                <img src="./img/myflix_angular_home.png" alt="simple list screenshot" width="100%" height="35%">
-                <h2 class="projects">Angular App</h2>
-                <p>Angular is used to build a client-side of an existing movies library application (REST API and database) that uses existing server-side code. User registration, display of movies in the database, favourites list within which users can add and remove movies, information about different directors and movie genres; users can also deregister.</p>
-                <p class="technologies">Technologies:</p>
-                <ul class="project_technologies">
-                  <li>Anuglar</li>
-                  <li>TypeScript</li>
-                  <li>TypeDoc</li>
-                  <li>Angular CLI</li>
-                </ul>
-                <div class="project_links">
-                  <a href="https://github.com/marjsky/myFlix-Angular-client" target="_blank" class="button work_link">See Github</a>
-                  <a href="https://marjsky.github.io/myFlix-Angular-client/" target="_blank" class="button work_link">Visit Site</a>
-                  <!-- <a href="#" target="_blank" class="button work_link">Case Study</a> -->
-                </div>
-            </div>
-
-            <!-- <div class="grid__item">
-                <h2>D3.js interactive data </h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum minus, at expedita quaerat cupiditate pariatur nihil magni quae sint ipsam nobis consectetur error ullam obcaecati corrupti enim, placeat ipsum! Eveniet.</p>
-                <a href="#">See project on Github</a>
-            </div> -->
+      <h1 class="title-work">Work</h1>
+      <div class="grid">
+        <!-- Grid items will live here -->
+        <div class="grid__item">
+          <img
+            src="./img/Screenshot_meet.png"
+            alt="meet app screenshot"
+            width="100%"
+            height="35%"
+          />
+          <h2 class="projects">Meet App</h2>
+          <p>
+            Serverless progressive web application (PWA) built with React using
+            test-driven development (TDD) tecnique and behavior-driven
+            development. The application uses the Google Calendar API to
+            retrieve data about upcoming events.
+          </p>
+          <p class="technologies">Technologies:</p>
+          <ul class="project_technologies">
+            <li>AWS</li>
+            <li>Axios</li>
+            <li>Jest</li>
+            <li>React</li>
+            <li>Recharts</li>
+            <li>Jest-Cucumber</li>
+            <li>O-Auth</li>
+          </ul>
+          <div class="project_links">
+            <a
+              href="https://github.com/marjsky/meet"
+              target="_blank"
+              class="button work_link"
+              >See Github</a
+            >
+            <a
+              href="https://marjsky.github.io/meet/"
+              target="_blank"
+              class="button work_link"
+              >Visit Site</a
+            >
+            <!-- <a href="#" target="_blank" class="button work_link">Case Study</a> -->
+          </div>
         </div>
+
+        <div class="grid__item">
+          <img
+            src="./img/Pokedex.png"
+            alt="simple list screenshot"
+            width="100%"
+            height="35%"
+          />
+          <h2 class="projects">Pokedex</h2>
+          <p>
+            In the Pokedex App, a list of Pokémon is displayed on the web. Upon
+            clicking a Pokémon's name, a modal window will open showing a
+            description of that Pokémon.
+          </p>
+          <p class="technologies">Technologies:</p>
+          <ul class="project_technologies">
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>Bootstrap</li>
+            <li>CSS3</li>
+          </ul>
+          <div class="project_links">
+            <a
+              href="https://github.com/marjsky/simple-js-app"
+              target="_blank"
+              class="button work_link"
+              >See Github</a
+            >
+            <a
+              href="https://marjsky.github.io/simple-js-app/"
+              target="_blank"
+              class="button work_link"
+              >Visit Site</a
+            >
+            <!-- <a href="#" target="_blank" class="button work_link">Case Study</a> -->
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <img
+            src="./img/API_DB_myflix.png"
+            alt="simple list screenshot"
+            width="100%"
+            height="35%"
+          />
+          <h2 class="projects">MyFlix API</h2>
+          <p>
+            This is the server-side component of the myFlix Client. Users can
+            find information about different movies, directors, and genres
+            through the web application. Using the site, users can create a
+            movie list, update their personal information, and sign up.
+          </p>
+          <p class="technologies">Technologies:</p>
+          <ul class="project_technologies">
+            <li>MongoDB</li>
+            <li>MongoDB</li>
+            <li>Express</li>
+            <li>Node JS</li>
+            <li>JavaScript</li>
+            <li>Postman</li>
+            <li>Passport</li>
+            <li>Heroku</li>
+          </ul>
+          <div class="project_links">
+            <a
+              href="https://github.com/marjsky/movie-api"
+              target="_blank"
+              class="button work_link"
+              >See Github</a
+            >
+            <a
+              href="https://mj23flixdb.herokuapp.com/documentation/"
+              target="_blank"
+              class="button work_link"
+              >Visit Site</a
+            >
+            <!-- <a href="#" target="_blank" class="button work_link">Case Study</a> -->
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <img
+            src="./img/react_app.png"
+            alt="simple list screenshot"
+            width="100%"
+            height="35%"
+          />
+          <h2 class="projects">React App (myFlix)</h2>
+          <p>
+            MyFlix client code, built with JavaScript/React, uses existing
+            server-side code (REST API and database). In the app, the user can
+            view information about selected movies, as well as their directors
+            and genres, after creating an account. In addition to managing her
+            account data, the user can add and remove favorite movies.
+          </p>
+          <p class="technologies">Technologies:</p>
+          <ul class="project_technologies">
+            <li>React</li>
+            <li>React-Redux</li>
+            <li>React-Router-Dom</li>
+            <li>Parcel</li>
+            <li>Node JS</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+          </ul>
+          <div class="project_links">
+            <a
+              href="https://github.com/marjsky/myFlix-client"
+              target="_blank"
+              class="button work_link"
+              >See Github</a
+            >
+            <a
+              href="https://marjsky-myflix.netlify.app/"
+              target="_blank"
+              class="button work_link"
+              >Visit Site</a
+            >
+            <a
+              href="document/Case_Study_react_app.pdf"
+              target="_blank"
+              class="button work_link"
+              >Case Study</a
+            >
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <img
+            src="./img/home_chat_app.PNG"
+            class="img-chat-app"
+            width="50%"
+            height="45%"
+          />
+          <!-- <img src="./img/home_chat_app.PNG" class="img-chat-app" alt="simple list screenshot" width="50%" height="35%"> -->
+          <h2 class="projects">React Native Chat App</h2>
+          <p>
+            Using React Native, this chat application allows users to chat on
+            mobile devices (both iOS and Android). Besides providing a chat
+            interface, the app also provides location and picture sharing
+            options. There are two ways of storing data: online and offline.
+          </p>
+          <p class="technologies">Technologies:</p>
+          <ul class="project_technologies">
+            <li>Gifted chat</li>
+            <li>Expo</li>
+            <li>React</li>
+            <li>Google Firebase</li>
+            <li>IOS simulator</li>
+            <li>Android simulator</li>
+          </ul>
+          <div class="project_links">
+            <a
+              href="https://github.com/marjsky/chat-app"
+              target="_blank"
+              class="button work_link"
+              >See Github</a
+            >
+            <!-- <a href="#" target="_blank" class="button work_link">Visit Site</a> -->
+            <!-- <a href="#" target="_blank" class="button work_link">Case Study</a> -->
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <img
+            src="./img/myflix_angular_home.png"
+            alt="simple list screenshot"
+            width="100%"
+            height="35%"
+          />
+          <h2 class="projects">Angular App</h2>
+          <p>
+            Angular is used to build a client-side of an existing movies library
+            application (REST API and database) that uses existing server-side
+            code. User registration, display of movies in the database,
+            favourites list within which users can add and remove movies,
+            information about different directors and movie genres; users can
+            also deregister.
+          </p>
+          <p class="technologies">Technologies:</p>
+          <ul class="project_technologies">
+            <li>Anuglar</li>
+            <li>TypeScript</li>
+            <li>TypeDoc</li>
+            <li>Angular CLI</li>
+          </ul>
+          <div class="project_links">
+            <a
+              href="https://github.com/marjsky/myFlix-Angular-client"
+              target="_blank"
+              class="button work_link"
+              >See Github</a
+            >
+            <a
+              href="https://marjsky.github.io/myFlix-Angular-client/"
+              target="_blank"
+              class="button work_link"
+              >Visit Site</a
+            >
+            <!-- <a href="#" target="_blank" class="button work_link">Case Study</a> -->
+          </div>
+        </div>
+
+        <!-- <div class="grid__item">
+                  <h2>D3.js interactive data </h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum minus, at expedita quaerat cupiditate pariatur nihil magni quae sint ipsam nobis consectetur error ullam obcaecati corrupti enim, placeat ipsum! Eveniet.</p>
+                  <a href="#">See project on Github</a>
+              </div> -->
+      </div>
     </section>
 
     <!-- Footer with links to social media profiles -->
@@ -179,20 +306,35 @@
       <p>Find me on</p>
       <div class="social-media">
         <!-- Added attribute link, target new tab, and secured against malicious -->
-        <a href="https://github.com/marjsky" target="_blank" rel="noopener noreferrer">
-          <img src="img/github.svg" alt="Github">
+        <a
+          href="https://github.com/marjsky"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="img/github.svg" alt="Github" />
         </a>
-        <a href="https://twitter.com/marcusjdaniels" target="_blank" rel="noopener noreferrer">
-          <img src="img/twitter.svg" alt="Twitter">
+        <a
+          href="https://twitter.com/marcusjdaniels"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="img/twitter.svg" alt="Twitter" />
         </a>
-        <a href="https://dev.to/marjsky" target="_blank" rel="noopener noreferrer">
-          <img src="img/dev-community-icon.svg" alt="Dev Commmunity">
+        <a
+          href="https://dev.to/marjsky"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="img/dev-community-icon.svg" alt="Dev Commmunity" />
         </a>
-        <a href="https://www.linkedin.com/in/marcus-daniels-5a721925a/" target="_blank" rel="noopener noreferrer">
-          <img src="img/linkedin.svg" alt="LinkedIn"> 
+        <a
+          href="https://www.linkedin.com/in/marcus-daniels-5a721925a/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="img/linkedin.svg" alt="LinkedIn" />
         </a>
       </div>
     </footer>
-
-</body>
+  </body>
 </html>
