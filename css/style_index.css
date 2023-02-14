@@ -135,7 +135,7 @@ ul {
 
 /* Toggle menu icon */
 .side-menu:checked ~ nav {
-  max-height: 40%;
+  max-height: 53%;
 }
 .side-menu:checked ~ .hamb .hamb-line {
   background: transparent;

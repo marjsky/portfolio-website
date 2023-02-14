@@ -140,7 +140,7 @@ button:focus,
   width: 100%;
   height: 100%;
   position: fixed;
-  top: 70px;
+  top: 100px;
   background-color: #eafff8;
   overflow: hidden;
 }
@@ -201,7 +201,7 @@ button:focus,
 
 /* Toggle menu icon */
 .side-menu:checked ~ nav {
-  max-height: 40%;
+  max-height: 53%;
 }
 .side-menu:checked ~ .hamb .hamb-line {
   background: transparent;
