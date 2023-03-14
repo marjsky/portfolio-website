@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: last 4.0 version
 */
 
 /* Theming */
@@ -201,7 +201,7 @@ button:focus,
 
 /* Toggle menu icon */
 .side-menu:checked ~ nav {
-  max-height: 53%;
+  max-height: 60%;
 }
 .side-menu:checked ~ .hamb .hamb-line {
   background: transparent;
