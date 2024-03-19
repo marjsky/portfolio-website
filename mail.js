@@ -17,11 +17,12 @@ const submitForm = (e) => {
   e.preventDefault(e);
 
   // individual values from From's inputs
-  const name = getElementValue('name');
+  const firstName = getElementValue('first-name');
+  const lastName = getElementValue('last-name');
   const email = getElementValue('email');
   const msgContent = getElementValue('msgContent');
 
-  saveMessage(name, email, msgContent);
+  saveMessage(firstName, lastName, email, msgContent);
 
   // enable alert
   document.querySelector('.alert').style.display = 'block';
@@ -38,10 +39,11 @@ const submitForm = (e) => {
 document.getElementById("contactForm").addEventListener("submit", submitForm);
 
 // Save Form data to Firebase
-const saveMessage = (name, email, msgContent) => {
+const saveMessage = (firstName, lastName, email, msgContent) => {
   
   db.doc().set({
-    name: name,
+    firstName: firstName,
+    lastName: lastName,
     email: email,
     msgContent: msgContent,
   });
